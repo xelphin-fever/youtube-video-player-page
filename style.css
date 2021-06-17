@@ -20,6 +20,7 @@ input{
   font-size: 30px;
   border: 1px solid var(--gray); 
   width: 30vw;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*--SECTIONS--*/
@@ -65,13 +66,31 @@ header div{
 
 /*LEFT MAIN*/
 .left-main{
-  width: 70%;
+  width: fit-content;
   min-height: 80vh;
 }
 iframe{
-  width: 100%;
   margin: 0 auto;
-  height: 70vh;
 }
+
+/*Video Heading*/
+.video-heading{
+  font-size: 30px;
+  margin-top: 40px;
+}
+.video-stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 20px;
+  align-items: center;
+}
+.video-stats-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 /*RIGHT WATCHLIST*/
