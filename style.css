@@ -1,7 +1,8 @@
 
 :root {
-  --gray: rgb(104, 104, 104);
-  --light-gray: rgb(243, 243, 243);
+  --dark-gray: rgb(104, 104, 104);
+  --gray: rgb(224, 224, 224);
+  --light-gray: rgb(245, 245, 245);
 }
 
 /*--ELEMENT DEFAULT--*/
@@ -10,18 +11,35 @@ button{
   border: none;
   outline: none;
   margin:0 10px;
-  
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif; 
 }
 .material-icons{
   font-size: 35px;
-  color: var(--gray);
+  color: var(--dark-gray);
 }
 input{
   font-size: 30px;
-  border: 1px solid var(--gray); 
+  border: 1px solid var(--dark-gray); 
   width: 30vw;
   font-family: 'Roboto', sans-serif;
 }
+
+
+
+/*--GENERAL CLASSES--*/
+.gen-flex-sb{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gen-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 /*--SECTIONS--*/
 
@@ -30,12 +48,10 @@ body{
   background-color: var(--light-gray);
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  font-weight: 300;
 }
 /*HEADER*/
 header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   background-color: white;
   padding: 20px 40px;
   align-items: center;
@@ -77,14 +93,11 @@ iframe{
 .video-heading{
   font-size: 30px;
   margin-top: 40px;
+  font-weight: 400;
 }
 .video-stats{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-top: 20px;
   font-size: 20px;
-  align-items: center;
 }
 .video-stats-buttons{
   display: flex;
@@ -92,5 +105,71 @@ iframe{
   align-items: center;
 }
 
+/*Video Info*/
+.video-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.video-info-text{
+  width: 76%;
+}
+.video-info-text h4{
+  font-weight: 400;
+}
+.video-info-text button{
+  margin: 0;
+  padding: 0;
+}
+.subscribe-btn{
+  background-color: rgb(197, 22, 22);
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+/*Comments*/
+.comments-div div{
+  margin-top: 20px;
+}
+.comments-div input{
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  background-color: transparent;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.comment{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.comment h2{
+  font-weight: 400;
+}
+.comment h2 span{
+  font-weight: 300;
+}
+.comment img{
+  margin-right: 20px;
+}
+.comment-text button{
+  font-size: 15px;
+}
+
+.comment-text .material-icons{
+  font-size: inherit;
+}
+.link{
+  color: rgb(82, 139, 224);
+}
 
 /*RIGHT WATCHLIST*/
+
+/*Watchlist Buttons*/
+.watchlist-buttons button{
+  background-color: var(--gray);
+  padding: 10px 18px;
+  border-radius: 30px;
+}

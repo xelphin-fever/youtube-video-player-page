@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube-Video-Player-Page-Copy</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./init.css" rel="stylesheet" type="text/css" />
   <link href="./style.css" rel="stylesheet" type="text/css" />
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--HEADER (TOP)-->
-  <header>
+  <header class="gen-flex-sb">
     <div>
       <button><span class="material-icons">&#xE5D2</span></button>
       <a href="https://www.youtube.com/">
@@ -43,7 +43,7 @@
       <!--Video Heading-->
       <div class="video-heading">
         <h2>Big Thief - UFOF (Official Audio)</h2>
-        <div class="video-stats">
+        <div class="video-stats gen-flex-sb">
           <h3>548,303 views • Feb 26, 2019</h3>
           <div class="video-stats-buttons">
             <button><span class="material-icons">&#xE8DC</span></button>
@@ -58,10 +58,96 @@
           </div>
         </div>
       </div>
+      <hr/>
+      <!--Video Info-->
+      <div class="video-info ">
+        <img src="./images/icons/uploader-logo.png" alt="Uploader Logo" />
+        <div class="video-info-text">
+          <h4>Big Thief <span class="material-icons" style="font-size: 15px;">&#xE405</span></h4>
+          <br></br>
+          <h5>20K Subscribers</h5>
+          <br/>
+          <p>
+            'UFOF' by Big Thief, from the new album 'U.F.O.F.', out now on 4AD. Listen here: 
+            <br></br>
+            <a>https://bigthief.ffm.to/ufof.oyd</a>
+            <br></br>
+            <br></br>
+          </p>
+          <button>SHOW MORE</button>
+          <br></br>
+        </div>
+        <button class="subscribe-btn">SUBSCRIBE</button>
+      </div>
+      <hr/>
+      <!--Comments-->
+      <div class="comments-div">
+        <div class="comments-top gen-flex">
+          <h2>344 Commeents</h2>
+          <button><span class="material-icons">&#xE164</span> SORT BY</button>
+        </div>
+        <div class="comments-user gen-flex">
+          <img src="./images/icons/user-logo.png" alt="user logo"/>
+          <input type="text" placeholder="Commenting Publicly as User" />
+        </div>
+        <div class="comments-div">
+          <div class="comment">
+            <img src="./images/icons/comment-1.png" alt="comment logo"/>
+            <div class="comment-text">
+              <h2>4AD <span> 2 years ago</span> </h2>
+              <br>
+              <h3>We're very excited to welcome Big Thief to the 4AD family !</h3>
+              <div class="gen-flex">
+                <button><span class="material-icons">&#xE8DC</span>&nbsp;&nbsp; 345</button>
+                <button><span class="material-icons">&#xE8DB</span>  </button>
+                <button>REPLY</button>
+              </div>
+              <br>
+              <h3 class="link">⏷ View 11 Replies</h3>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="./images/icons/comment-2.png" alt="comment logo"/>
+            <div class="comment-text">
+              <h2>Tyra 555 <span> 1 month ago</span> </h2>
+              <br>
+              <h3>Such a great song</h3>
+              <div class="gen-flex">
+                <button><span class="material-icons">&#xE8DC</span>&nbsp;&nbsp; 22</button>
+                <button><span class="material-icons">&#xE8DB</span>  </button>
+                <button>REPLY</button>
+              </div>
+              <br>
+              <h3 class="link">⏷ View 3 Replies</h3>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="./images/icons/comment-3.png" alt="comment logo"/>
+            <div class="comment-text">
+              <h2>Amelie <span> 2 months ago</span> </h2>
+              <br>
+              <h3>One of my favourite songs</h3>
+              <div class="gen-flex">
+                <button><span class="material-icons">&#xE8DC</span>&nbsp;&nbsp; 4</button>
+                <button><span class="material-icons">&#xE8DB</span>  </button>
+                <button>REPLY</button>
+              </div>
+              <br>
+              <h3 class="link">⏷ View 1 Replies</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    
     <!--RIGHT WATCHLIST-->
     <div class="right-watchlist">
-
+      <!--Watchlist Buttons-->
+      <div class="watchlist-buttons gen-flex">
+        <button>All</button>
+        <button>Related</button>
+        <button>Watch</button>
+      </div>
     </div>
   </div>
 </body>
